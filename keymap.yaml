@@ -1,0 +1,11 @@
+layout: {qmk_keyboard: zsa/voyager, qmk_layout: LAYOUT}
+layers:
+  ‎:
+    - [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+    - [" ", W, C, M, P, B, X, L, O, U, J, -]
+    - [" ", R, S, T, H, F, Y, N, A, E, I, ","]
+    - [" ", Q, V, G, D, K, Z, $$mdi:star$$, "'", ;, ., " "]
+    - " "
+    - " "
+    - " "
+    - " "
