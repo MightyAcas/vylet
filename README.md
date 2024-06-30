@@ -5,10 +5,25 @@
   r s t h f  y n a e i ,
   q v g d k  z * ' ; .  
 ```
-
-Vylet is an alternative keyboard layout I've been using for almost 6 months now. It started out as a mod of [Wedlock](https://github.com/GGabi/wedlock) before evolving into its own layout. Vylet takes inspiration from [APTv3](https://github.com/Apsu/APT), [Workman](https://workmanlayout.org/), and [Magic Sturdy](https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md). You may want to click that last link if you don't know what a magic key `*` is, since this layout makes use of it.
-
 <img src="img/vylet_keymap_trans.svg" alt="vylet keymap" width="100%" />
+
+Vylet is the product of my ongoing keyboard layout hyperfixation, which started almost 2 years ago from now (6/29/24). It's been almost 6 months since I started using it. The layout started out as a mod of [Wedlock](https://github.com/GGabi/wedlock) before evolving into its own thing. Vylet takes inspiration from [APTv3](https://github.com/Apsu/APT), [Workman](https://workmanlayout.org/), and [Magic Sturdy](https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md). You may want to click that last link if you don't know what a magic key `*` is, since this layout makes use of it.
+
+## Goals
+December 2023 was around the point where I started creating my own layouts by modding Wedlock. At this point I had already had a year of experience with Colemak DH, a month with Canary, and a bunch of weeks spread between a couple other layouts. Using these allowed me to get a better grasp of what I wanted out of a layout. So when setting out to make a layout tailored to me, these were the characteristics I was aiming for:
+- Balanced finger use
+- High inrolls
+- Low scissors (with little to no full scissors)
+- Low LSBs
+- Low index use, but only on the right hand (most likely strain from mouse clicking)
+
+## Background
+
+When doing my initial modding, I would tweak a letter's position every couple of days based on my comfort with it. I did this swapping over the course of 2 months, and during this I encountered a problem: the letter `Y`
+
+### Y
+
+Y sucks. 
 
 Here's a List of the top 10 SFBs in my layout:
 
