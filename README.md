@@ -8,6 +8,8 @@
 
 Vylet is an alternative keyboard layout I've been using for almost 6 months now. It started out as a mod of [Wedlock](https://github.com/GGabi/wedlock) before evolving into its own layout. Vylet takes inspiration from [APTv3](https://github.com/Apsu/APT), [Workman](https://workmanlayout.org/), and [Magic Sturdy](https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md). You may want to click that last link if you don't know what a magic key `*` is, since this layout makes use of it.
 
+<img src="img/vylet_keymap_trans.svg" alt="vylet keymap" width="100%" />
+
 Here's a List of the top 10 SFBs in my layout:
 
 ```
