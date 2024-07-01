@@ -4,8 +4,8 @@ draw_config:
   key_h: 80
 
   # keys border radius
-  key_rx: 4
-  key_ry: 4
+  key_rx: 6
+  key_ry: 6
 
   # key labels line spacing for multi-line labels
   line_spacing: 1
@@ -17,12 +17,12 @@ draw_config:
   small_pad: 6
 
   # Padding between keys
-  inner_pad_w: 1.5
-  inner_pad_h: 1.5
+  inner_pad_w: 2.5
+  inner_pad_h: 2.5
 
   # padding between layers
-  outer_pad_w: 55
-  outer_pad_h: 35
+  outer_pad_w: 15
+  outer_pad_h: 15
 
   # gap between two halves for ortho layout generator
   # split_gap: 20 # This doesn't seem to have any effect either? 🤔
@@ -88,7 +88,7 @@ draw_config:
         font-kerning: normal;
         text-rendering: optimizeLegibility;
         fill: rgb(198, 208, 245);
-        background-color: rgb(30, 30, 46);
+        background-color: rgb();
         background-image: var(--logo-path);
         background-repeat: no-repeat;
         background-position: var(--logo-position);
@@ -118,12 +118,13 @@ draw_config:
 
     /* Keys */
     rect.key {
-        fill: rgb(24, 24, 37);
-        stroke: rgb(49, 50, 68);
+        fill: rgb(30, 30, 50);
+        stroke: rgb(24, 24, 40);
         stroke-width: 1;
     }
     .tap {
-        fill: rgb(138, 92, 245);
+        fill: rgb(122, 82, 204);
+        font-size: 25px;
     }
     .hold {
         fill: rgb(138, 92, 245);
@@ -158,15 +159,27 @@ draw_config:
     }
 
     /*
-     * Transparent Keys
+     * Non-Layout Keys
      */
-    .trans {
-      opacity: 0.8;
-    }
-    .trans {
-        --color--key--bg: var(--color--trans--bg);
-        --color--key--border: var(--color--trans--border);
-        --color--key--text--tap: var(--color--trans--text--tap);
-        --color--key--text--shifted: var(--color--trans--text--shifted);
-        --color--key--text--hold: var(--color--trans--text--hold);
+    .keypos-0,
+    .keypos-1,
+    .keypos-2,
+    .keypos-3,
+    .keypos-4,
+    .keypos-5,
+    .keypos-6,
+    .keypos-7,
+    .keypos-8,
+    .keypos-9,
+    .keypos-10,
+    .keypos-11,
+    .keypos-12,
+    .keypos-24,
+    .keypos-36,
+    .keypos-47,
+    .keypos-48,
+    .keypos-49,
+    .keypos-50,
+    .keypos-51 {
+        opacity: 0.5
     }
