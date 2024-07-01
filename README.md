@@ -115,3 +115,6 @@ The [Alt Keyboard Layouts (AKL) Discord](https://discord.com/invite/sxTV2G5Acg) 
 [Vylet Pony](https://www.youtube.com/@VyletPony) for inspiring the layout name, and for being the soundtrack to my keyboard layout brainrot.
 
 [You](https://www.youtube.com/watch?v=heWXOUOcC3I) :D Thanks for reading!
+
+## Contact
+In you have any questions or just wanna reach out, feel free to! My Discord username is `acas`.
