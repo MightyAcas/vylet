@@ -49,6 +49,8 @@ Keep in mind that alt fingering doesn't just erase the total SFB percentage here
 
 Taking this into account, the SFBs caused by `LY` in this layout isn't 0.377%, but instead is 0.091%.
 
+I go more in depth about the `LY` bigram and its connection to Workman [here](ly_workman.md) for those curious.
+
 ## Sliding
 
 `OA`, `UE`, and `PH` are all comfortable downwards slides for me. `NY` is also a slide, just a sideways one. It's worth mentioning that this technique doesn't work as well if you're on a standard mechanical keyboard with the taller, more spaced out keys. Low profile keyboards with light switches, and especially laptop keyboards are best suited for this.
