@@ -9,15 +9,30 @@
 ```
 `*/★` = magic key
 
-Vylet is the product of my ongoing keyboard layout hyperfixation, which started about 2 years ago from now. It's been almost 6 months since I started using it. The layout started out as a mod of [Wedlock](https://github.com/GGabi/wedlock) before evolving into its own thing. Vylet takes inspiration from [APTv3](https://github.com/Apsu/APT), [Workman](https://workmanlayout.org/), and [Magic Sturdy](https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md). You may want to click that last link if you don't know what a magic key `*` is, since this layout makes use of it. It also takes advantage of alt fingerings and slides, so I hope you know what those are too. If not, go read Ec0vid's layout doc.
+# Introduction
 
-## Goals
+Vylet is a keyboard layout I made over the course of 2 months with the help of online layout analyzers like [Cyanophage](https://cyanophage.github.io/index.html). These kinds of sites allow you to manually move around letters and see the resulting stats, which was how my layout was created. I've been using Vylet for almost 6 months now and just recently reached 100wpm with it. I have no intentions of switching any time soon.
+
+![image](https://github.com/MightyAcas/Vylet/assets/67846394/fd36a2c0-2ba6-4e25-8d3b-95467f16de06)
+
+This layout is the product of my ongoing keyboard layout hyperfixation, which started about 2 years ago from now. Vylet started out as a mod of [Wedlock](https://github.com/GGabi/wedlock) before evolving into its own thing. It takes inspiration from [APTv3](https://github.com/Apsu/APT), [Workman](https://workmanlayout.org/), and [Magic Sturdy](https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md). Vylet takes advantage of the following techniques/features:
+- [Alt Fingering](#alt-fingering)
+- [Sliding](#sliding)
+- [Magic Key](#magic-key)
+
+If you're not sure what any of those are, I've included some [definitions](#definitions) near the bottom of this readme to get you caught up.
+
+## Goals / Vylet Features
 By the time I started making my own mods/layouts in December 2023, I had already had a year of experience with [Colemak DH](https://colemakmods.github.io/mod-dh/), a month with [Canary](https://github.com/Apsu/Canary), and a bunch of weeks spread between a couple other layouts. Learning and typing daily with these allowed me to get a better grasp of what I wanted out of a layout. So when setting out to make a layout tailored to me, these were the characteristics I was aiming for:
 - Balanced finger use
-- High inrolls
+- High inrolls (with comparatively low outrolls)
 - Low scissors (with little to no full scissors)
 - Low LSBs
 - Low index use, but only on the right hand (most likely strain from mouse clicking)
+
+All of these would be achieved with Vylet, and can be used to characterize what the layout is like. Here are some other notable characteristics of the layout:
+- Low 2u SFS
+- Balanced alternation (not low enough where you start getting too many onehands)
 
 ## Background
 
@@ -25,7 +40,7 @@ When doing my initial modding, I would tweak a letter's position every couple of
 
 On APTv3, `Y` is placed on the top row of the right pinky. This would break my rules by introducing some nasty pinky-ring scissor interactions, as well as putting the pinky's usage above what I'd prefer. This is what got me thinking about where to place Y, and deciding to optimize its placement based on alt fingering.
 
-## Alt Finger
+## Alt Fingering
 
 The placement of `Y` in Vylet creates only 2 significant bigrams: `LY` and `NY`. Both of these bigrams can be alt fingered comfortably, which negates most of the SFBs this `Y` placement creates. We're just gonna focus on talking about `LY` since its the far more important SFB, and I tend to slide `NY` instead of alting it anyway.
 
@@ -33,7 +48,7 @@ Keep in mind that alt fingering doesn't just erase the total SFB percentage here
 
 Taking this into account, the SFBs caused by `LY` in this layout isn't 0.377%, but instead is 0.091%.
 
-## Slide
+## Sliding
 
 `OA`, `UE`, and `PH` are all comfortable downwards slides for me. `NY` is also a slide, just a sideways one. It's worth mentioning that this technique doesn't work as well if you're on a standard mechanical keyboard with the taller, more spaced out keys. Low profile keyboards with light switches, and especially laptop keyboards are best suited for this.
 
@@ -76,6 +91,20 @@ i★      ⇒ ix
 Most of these should be self-explanatory except the 3 `X` rules at the end. `X` can be annoying on the vowel side because in words, it's often between 2 other vowels (`exist`, `exactly`, `example`, etc.). This means any involvement of `X` in a word is likely going to be a redirect. these 3 rules make the redirects less of an issue since `X` is now in a closer, more comfortable spot.
 
 My implementation of the magic key into my QMK config is done through [Sequence Transform](https://github.com/Ikcelaks/qmk_sequence_transform). It's what allows me to create magic rules with the extremely simple syntax you saw above. You can also do a bunch of other more complex things with it, I just don't take full advantage of that.
+
+## Vylet Weaknesses
+
+Personally I have very little issue with anything this layout has, but I do want to point out some factors that may be turnoffs for others.
+- The hand balance leans right (46/54). If you're a right space user this could be too much.
+- Depending on the analyzer used, redirects are either average or a bit above that.
+- Vylet was not optimized with 1u SFS in mind, so the stat is only in the average range instead of being low like many modern layouts are.
+- Some people can't get used to having a somewhat common letter like `W` on the top left pinky key.
+
+## Definitions
+
+- Alt Fingering: Pressing a key with a different finger than would be typed with traditional touch typing technique. An example of this on Qwerty would be using your middle finger and index finger to type `R` and `T` respectively for a word like `heart`. It can be used to make typing a SFB easier.
+- Slide: Pressing a key and quickly moving to a neighboring key while not lifting your finger. An example of this on Qwerty would be sliding your middle finger from `E` down to `D` for a word like `walked`. It can be used to make typing a SFB easier.
+- Magic Key: A key (often represended by `*` in layouts) which has an output based on the last keypress. The output, as well as what keys prompts said output, can be customized. An example would be this magic rule: `c★ ⇒ ck`. This rule indicates that if the last keypress before the magic key was `C`, the output will be `K`.
 
 ## Credits
 [Cyanophage](https://cyanophage.github.io/index.html), [Pine](https://clemenpine.github.io/keysolve-web/), and [Oxey](https://oxey.dev/playground/index.html) for their web-based keyboard layout analyzers. Their ease of access has been invalable for me.
