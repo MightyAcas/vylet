@@ -49,7 +49,7 @@ Keep in mind that alt fingering doesn't just erase the total SFB percentage here
 
 Taking this into account, the SFBs caused by `LY` in this layout isn't 0.377%, but instead is 0.091%.
 
-I go more in depth about the `LY` bigram and its connection to Workman [here](ly_workman.md) for those curious.
+NOTE: I understand that those who have used Workman may have some trauma surrounding `LY` and its less than optimal placement. This is why I have a separate page going in depth on how Vylet's implementation of ["potential energy"](ly_workman.md) is vastly different.
 
 ## Sliding
 
