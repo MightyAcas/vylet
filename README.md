@@ -1,16 +1,17 @@
 # Vylet
 
+<img src="img/vylet_keymap.svg" alt="vylet keymap" width="100%" />
+
 ```
   w c m p b  x l o u j -
   r s t h f  y n a e i ,
   q v g d k  z * ' ; .  
 ```
-<img src="img/vylet_keymap_trans.svg" alt="vylet keymap" width="100%" />
 
-Vylet is the product of my ongoing keyboard layout hyperfixation, which started almost 2 years ago from now (6/29/24). It's been almost 6 months since I started using it. The layout started out as a mod of [Wedlock](https://github.com/GGabi/wedlock) before evolving into its own thing. Vylet takes inspiration from [APTv3](https://github.com/Apsu/APT), [Workman](https://workmanlayout.org/), and [Magic Sturdy](https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md). You may want to click that last link if you don't know what a magic key `*` is, since this layout makes use of it.
+Vylet is the product of my ongoing keyboard layout hyperfixation, which started about 2 years ago from now. It's been almost 6 months since I started using it. The layout started out as a mod of [Wedlock](https://github.com/GGabi/wedlock) before evolving into its own thing. Vylet takes inspiration from [APTv3](https://github.com/Apsu/APT), [Workman](https://workmanlayout.org/), and [Magic Sturdy](https://github.com/Ikcelaks/keyboard_layouts/blob/main/magic_sturdy/magic_sturdy.md). You may want to click that last link if you don't know what a magic key `*` is, since this layout makes use of it. It also takes advantage of alt fingerings and slides, so I hope you know what those are too. If not, go read Ec0vid's layout doc.
 
 ## Goals
-December 2023 was around the point where I started creating my own layouts by modding Wedlock. At this point I had already had a year of experience with Colemak DH, a month with Canary, and a bunch of weeks spread between a couple other layouts. Using these allowed me to get a better grasp of what I wanted out of a layout. So when setting out to make a layout tailored to me, these were the characteristics I was aiming for:
+By the time I started making my own mods/layouts in December 2023, I had already had a year of experience with [Colemak DH](https://colemakmods.github.io/mod-dh/), a month with [Canary](https://github.com/Apsu/Canary), and a bunch of weeks spread between a couple other layouts. Learning and typing daily with these allowed me to get a better grasp of what I wanted out of a layout. So when setting out to make a layout tailored to me, these were the characteristics I was aiming for:
 - Balanced finger use
 - High inrolls
 - Low scissors (with little to no full scissors)
@@ -19,114 +20,29 @@ December 2023 was around the point where I started creating my own layouts by mo
 
 ## Background
 
-When doing my initial modding, I would tweak a letter's position every couple of days based on my comfort with it. I did this swapping over the course of 2 months, and during this I encountered a problem: the letter `Y`
+When doing my initial modding, I would tweak a letter's position every couple of days based on my comfort with it. I did this over the course of 2 months, and eventually realized I was making something very similar to APTv3. I had originally passed on learning this layout when I heard about it a year ago, but on second look it seemed like it had all the characteristics I was looking for. There was one exception: the letter `Y`.
 
-### Y
-
-Y sucks. 
-
-Here's a List of the top 10 SFBs in my layout:
-
-```
-Top 10 vylet SFBs:
-ly    0.377%
-ny    0.140%
-ue    0.099%
-sc    0.092%
-nl    0.084%
-oa    0.045%
-ph    0.044%
-wr    0.039%
-e;    0.013%
-rw    0.012%
-```
-
-all of the top 8 sfbs are addressed, either in part or in full, by one of the following techniques:
-- alt fingering
-- slides
-- magic key
-
-I thought about explaining what those are, but honestly if you're reading this you already know what those are. And if not, go read Ec0vid's layout doc.
+On APTv3, `Y` is placed on the top row of the right pinky. This would break my rules by introducing some nasty pinky-ring scissor interactions, as well as putting the pinky's usage above what I'd prefer. This is what got me thinking about where to place Y, and deciding to optimize its placement based on alt fingering.
 
 ## Alt Fingering
 
-Alt fingering on a colstag keyboard is typically less preferred than rowstag, but there's still room to make it work. Namely with where I've placed my `L` and `Y` keys. The major bigrams created from this position is `LY`. Using the Monkeyracer corpus shows this bigram creates 0.38% SFBs.
+The placement of `Y` in Vylet creates only 2 significant bigrams: `LY` and `NY`. Both of these bigrams can be alt fingered comfortably, which negates most of the SFBs this `Y` placement creates. We're just gonna focus on talking about `LY` since its the far more important SFB, and I tend to slide `NY` instead of alting it anyway.
 
-I should meantion that these alt fingers don't outright erase the total SFB percentage here. Because they involve the middle finger, any word that uses a letter on the right hand middle finger (`O` or `A`), followed by `LY` is still a SFB. so words like `holy` or `really` contain SFBs.
-```
-Examples of ly in MONKEYRACER:
-5,050 / 406,279 words (1.243%)
-```
-```
-Examples of [ao]ly in MONKEYRACER:
-71 / 406,279 words (0.017%)
+Keep in mind that alt fingering doesn't just erase the total SFB percentage here (which is 0.377% in Monkeyracer). The `LY` alt finger starts with the middle finger, meaning any word that uses a letter on the right hand middle finger (`O` or `A`), followed by `LY` is still a SFB. This means words like `holy` or `really` contain SFBs in Vylet.
 
-analysis          (12)
-holy              (12)
-melancholy         (8)
-italy              (5)
-analyzing          (4)
-analyze            (4)
-paralyzed          (4)
-apocalypse         (3)
-analytic           (3)
-olympic            (2)
-```
-```
-Examples of lly in MONKEYRACER:
-1,282 / 406,279 words (0.316%)
-```
-```
-Examples of [ao]lly in MONKEYRACER:
-1,153 / 406,279 words (0.284%)
-
-really           (400)
-actually         (119)
-finally           (81)
-usually           (70)
-especially        (41)
-eventually        (35)
-literally         (21)
-naturally         (21)
-totally           (19)
-generally         (19)
-```
-the `LY` alt finger does not eliminate the full 0.377% SFBs that `LY`; It instead covers 0.286% SFBS. This means 0.091% SFBs is the true amount of SFBs `LY puts on the Vylet layout.
-
-these calculations were done by hand so there's always a chance i made a mistake, or i'm just plain missing something. just something to be aware of in case you were wondering.
-
-`NY` is also in a good spot to be alt fingered. I had originally designed this layout with it in mind, but over time I've opted against it in favor of sliding sideways.
-
-### NL
-
-ok this bigram is a bit deceiving.
-
-```
-Examples of nl in MONKEYRACER:
-1,176 / 406,279 words (0.289%)
-
-only             (892)
-suddenly          (84)
-unless            (50)
-certainly         (24)
-sunlight          (14)
-unlike            (14)
-moonlight         (14)
-commonly           (7)
-online             (7)
-unlikely           (6)
-```
-Out of the 1,176 instances of `nl` in the corpus, 892 of them are from `only` (76% of all `nl` instances). and in vylet, the `nl` bigram in `only` gets split up by typing `on` as normal and then alt fingering `ly`. I thought this would be slow but I'm consistently able to get burst speeds over 100wpm with this particular word. so at least for this bigram, I'm realistically only dealing with a quarter of the `nl` SFBs (which would be 0.021%).
+Taking this into account, the SFBs caused by `LY` in this layout isn't 0.377%, but instead is 0.091%.
 
 ## Slides
 
-`OA`, `UE`, and `PH` are all comfortable downwards slides for me. `NY` is also a slide, just a sideways one.
+`OA`, `UE`, and `PH` are all comfortable downwards slides for me. `NY` is also a slide, just a sideways one. It's worth mentioning that this technique doesn't work as well if you're on a standard mechanical keyboard with the taller, more spaced out keys. Low profile keyboards with light switches, and especially laptop keyboards are best suited for this.
 
 ## Magic Key
 
-This leaves me with two bigrams to address: `SC` and `WR`. I could slide `SC`, but upwards slides are much less comfortable than their downwards counterpart. `WR` is downwards, but is on the pinky which doesn't feel well-suited to do slides at least for my hands. This is why they would ultimately become rules for my magic key.
+This leaves me with two significant SFBs in Vylet to address: `SC` and `WR`. I could slide `SC`, but upwards slides are much less comfortable than their downwards counterpart. `WR` is downwards, but is on the pinky which doesn't feel well-suited to do slides at least for my hands. This is why they would ultimately become rules for my magic key.
 
 ### Magic Key Rules
+
+Below is my full set of magic rules used on Vylet.
 
 ```
 // full scissor bigram (FSB)
@@ -154,38 +70,7 @@ e★      ⇒ ex
 i★      ⇒ ix
 ```
 
-## Top SFBS revisited
-
-```
-Top 10 vylet SFBs:
-ly    0.091%
-ny    0.000%
-ue    0.000%
-sc    0.000%
-nl    0.021%
-oa    0.000%
-ph    0.000%
-wr    0.000%
-e;    0.013%
-rw    0.012%
-```
-
-fyi i'm treating this like a blog and less like a concise description of my layout. like i'll talk about specifics with my layout but also wanna go into what got me there in the first place. enjoy the ride :D
-
-## Background
-Vylet is the product of my ongoing keyboard layout hyperfixation, which started almost 2 years ago from now (6/29/24). I stumbled on the [r/keyboardlayouts subreddit](https://www.reddit.com/r/KeyboardLayouts/), which led to me learning a few different alternative keyboard layouts over the course of a year and a half. By mid-December 2023, I started creating my own layouts and would tweak a letter's position every couple of days based on my comfort with it. I did this over the course of 2 months, and by February I had the first concrete version of Vylet: 
-
-```
-  w c m p k  q l o u j -
-  r s t h f  y n a e i ,
-  z v g d b  x * ' / .  
-```
-
-Cool! It's still a few swaps off from being the current version, but it's close enough where I wouldn't consider it outright different.
-
-## Motivation
-
-![image](https://github.com/MightyAcas/Vylet/assets/67846394/6e8ac65a-fb34-4490-8065-b94b6cc715c7)
+Most of these should be self-explanatory except the 3 `X` rules at the end. `X` can be annoying on the vowel side because in words, it's often between 2 other vowels (`exist`, `exactly`, `example`, etc.). This means any involvement of `X` in a word is likely going to be a redirect. these 3 rules make the redirects less of an issue since `X` is now in a closer, more comfortable spot.
 
 ## Analyzer Stats
 
@@ -388,4 +273,4 @@ Weighted Speed
 ```
 
 ## Credits
-Cyanophage, Pine, and Oxey
+[Cyanophage](https://cyanophage.github.io/index.html), [Pine](https://clemenpine.github.io/keysolve-web/), and [Oxey](https://oxey.dev/playground/index.html) for their web-based keyboard layout analyzers. Their ease of access has been invalable for me.
