@@ -25,7 +25,7 @@ When doing my initial modding, I would tweak a letter's position every couple of
 
 On APTv3, `Y` is placed on the top row of the right pinky. This would break my rules by introducing some nasty pinky-ring scissor interactions, as well as putting the pinky's usage above what I'd prefer. This is what got me thinking about where to place Y, and deciding to optimize its placement based on alt fingering.
 
-## Alt Fingering
+## Alt Finger
 
 The placement of `Y` in Vylet creates only 2 significant bigrams: `LY` and `NY`. Both of these bigrams can be alt fingered comfortably, which negates most of the SFBs this `Y` placement creates. We're just gonna focus on talking about `LY` since its the far more important SFB, and I tend to slide `NY` instead of alting it anyway.
 
@@ -33,7 +33,7 @@ Keep in mind that alt fingering doesn't just erase the total SFB percentage here
 
 Taking this into account, the SFBs caused by `LY` in this layout isn't 0.377%, but instead is 0.091%.
 
-## Slides
+## Slide
 
 `OA`, `UE`, and `PH` are all comfortable downwards slides for me. `NY` is also a slide, just a sideways one. It's worth mentioning that this technique doesn't work as well if you're on a standard mechanical keyboard with the taller, more spaced out keys. Low profile keyboards with light switches, and especially laptop keyboards are best suited for this.
 
