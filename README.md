@@ -11,7 +11,7 @@
 
 # Introduction
 
-Vylet is a keyboard layout I made over the course of two months with the help of online layout analyzers like [Cyanophage](https://cyanophage.github.io/index.html). These kinds of sites allow you to manually move around letters and see the resulting stats, which was how my layout was created. I've been using Vylet for almost six months now and just recently reached 100wpm with it. I have no intentions of switching from it any time soon, and plan to ride it into the sunset. I'll this writeup once I hit one year with it!
+Vylet is a keyboard layout I made over the course of two months with the help of online layout analyzers like [Cyanophage](https://cyanophage.github.io/index.html). These kinds of sites allow you to manually move around letters and see the resulting stats, which was how my layout was created. I've been using Vylet for almost six months now and just recently reached 100wpm with it. I have no intentions of switching from it any time soon, and plan to ride it into the sunset. I'll update this writeup once I hit one year with it!
 
 ![image](https://github.com/MightyAcas/Vylet/assets/67846394/fd36a2c0-2ba6-4e25-8d3b-95467f16de06)
 
