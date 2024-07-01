@@ -2,6 +2,10 @@
 
 <img src="img/vylet_keymap.svg" alt="vylet keymap" width="100%" />
 
+> Graphic made using [Keymap Drawer](/caksoylar/keymap-drawer). Keyboard is the [ZSA Voyager](https://www.zsa.io/voyager).
+
+> Color palette is [Monkeytype](https://monkeytype.com/)'s "Purpleish" theme. As of v24.27.0, Vylet was added as an option in the layout emulator!
+
 ```
   w c m p b  x l o u j -
   r s t h f  y n a e i ,
@@ -119,4 +123,4 @@ The [Alt Keyboard Layouts (AKL) Discord](https://discord.com/invite/sxTV2G5Acg) 
 [You](https://www.youtube.com/watch?v=heWXOUOcC3I) :D Thanks for reading!
 
 ## Contact
-In you have any questions or just wanna reach out, feel free to! My Discord username is `acas`.
+In you have any questions or just wanna reach out, feel free to send me a message! My Discord username is `acas`.
