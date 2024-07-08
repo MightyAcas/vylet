@@ -83,7 +83,7 @@ text.label {
 rect.key {
     fill: rgb(30, 30, 50);
     stroke: rgb(24, 24, 40);
-    stroke-width: 1;
+    stroke-width: 0;
 }
 .tap {
     fill: rgb(122, 82, 204);
